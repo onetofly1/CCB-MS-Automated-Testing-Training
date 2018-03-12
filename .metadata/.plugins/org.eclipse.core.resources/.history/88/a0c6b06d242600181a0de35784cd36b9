@@ -1,0 +1,31 @@
+import org.openqa.selenium.WebDriver;
+
+
+public class EdgeBrowserOpen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		//selenium tests code
+		
+		// create driver object for Chrome browser
+		/*Class name= ChromeDriver */
+
+				System.out.println("launching Microsoft Edge browser");
+				System.setProperty("webdriver.edge.driver", "C:\\Users\\onetofly1\\Desktop\\Eclipse and Selenium Install\\"+"MicrosoftWebDriver.exe");
+				driver = new EdgeDriver();
+				
+				System.out.println(driver.getTitle());
+				System.out.println(driver.getCurrentUrl());
+				
+				driver.get("http://www.facebook.com");
+				
+				System.out.println(driver.getTitle());
+				System.out.println(driver.getCurrentUrl());
+				
+				driver.navigate().back();
+				driver.close();
+
+	}
+	
+}

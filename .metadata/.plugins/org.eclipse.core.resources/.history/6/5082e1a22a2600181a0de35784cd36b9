@@ -1,0 +1,36 @@
+package Sanity.Tests;
+// Selenium Browser WebDriver Supprt 
+import org.openqa.selenium.WebDriver;
+
+// Support for MS Edge, Chrome and FireFox Browsers
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WebSite_Sanity_Test_Verify_All_External_QA_Web_SiteURLs_UP {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// create driver object for chosen browser in config.properties file
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\onetofly1\\Desktop\\Eclipse and Selenium Install\\geckodriver.exe");
+			WebDriver driver=new FirefoxDriver();
+			
+			driver.get("http://www.facebook.com");
+			
+			System.out.println(driver.getTitle());
+			System.out.println(driver.getCurrentUrl());
+			
+			driver.get("http://www.facebook.com");
+				
+			System.out.println(driver.getTitle());
+			System.out.println(driver.getCurrentUrl());
+				
+			driver.navigate().back();
+
+			System.out.println(driver.getTitle());
+			System.out.println(driver.getCurrentUrl());
+			driver.close();
+	}
+
+}

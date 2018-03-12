@@ -1,0 +1,20 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FireFoxBrowserOpen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		//selenium tests code
+		
+		// create driver object for FireFox browser
+		/*Class name= FireFoxDriver */
+				System.setProperty("webdriver.gecko.driver","C:\\Users\\onetofly1\\Desktop\\Eclipse and Selenium Install\\geckodriver.exe");
+				WebDriver driver=new FirefoxDriver();
+				
+				driver.get("http://google.com");
+				System.out.println(driver.getTitle());
+
+	}
+}

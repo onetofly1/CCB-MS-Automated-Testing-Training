@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Selenium and Java Training - Albert Major O114252/src/Sanity/Tests/External_WebSite_Availability_Verification_All_Web_SiteURLs_UP.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Sanity.Tests.External_WebSite_Availability_Verification_All_Web_SiteURLs_UP"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Selenium and Java Training - Albert Major O114252"/>
+</launchConfiguration>

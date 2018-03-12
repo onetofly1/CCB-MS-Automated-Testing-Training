@@ -1,0 +1,42 @@
+package Sanity.Tests;
+import org.openqa.selenium.By;
+// Selenium Browser WebDriver Support 
+import org.openqa.selenium.WebDriver;
+
+// Support for MS Edge, Chrome and FireFox Browsers
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class External_WebSite_Availability_Verification_All_Web_SiteURLs_UP {
+	
+	public static void main(String[] args) {
+		String title="https://secure.paymentech.com/manager";
+		
+		// TODO Auto-generated method stub
+		
+		// create driver object for chosen browser in config.properties file
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\onetofly1\\Desktop\\Eclipse and Selenium Install\\geckodriver.exe");
+			WebDriver driver=new FirefoxDriver();
+			
+			// Got to and verify the config UI web app displays correct title on the landing page
+			driver.findElement(By.id(title));
+			String pageTitle=driver.getTitle();
+			System.out.equals(pageTitle);
+			
+//			System.out.println(driver.getTitle());
+//			System.out.println(driver.getCurrentUrl());
+			
+//			driver.get("http://www.facebook.com");
+//				
+//			System.out.println(driver.getTitle());
+//			System.out.println(driver.getCurrentUrl());
+//				
+//			driver.navigate().back();
+//
+//			System.out.println(driver.getTitle());
+//			System.out.println(driver.getCurrentUrl());
+//			driver.close();
+	}
+
+}
